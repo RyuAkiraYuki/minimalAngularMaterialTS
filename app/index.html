@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="minimalMaterialApp"><!--minimalMaterialApp-->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
+        <title>Minimal Angualr Material</title>
+        <link rel="stylesheet" href="./bower_components/angular-material/angular-material.min.css">
+        <link rel="stylesheet" href="./bower_components/angular-material-icons/angular-material-icons.css">
+        <link rel="stylesheet" href="./assets/app.css">
+        <style>
+            [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+                display: none !important;
+            }
+        </style>
+    </head>
+    <body class="minimalMaterialApp" ng-cloak ng-controller="mainController as vm" layout="column">
+        <h1>Sample controller storage output</h1>
+        <ul>
+            <li ng-repeat="baseModelInstance in vm.objectsStorage">{{baseModelInstance.title}}</li>
+        </ul>
+
+        <script src="./bower_components/angular/angular.min.js"></script>
+        <script src="./bower_components/angular-animate/angular-animate.min.js"></script>
+        <script src="./bower_components/angular-aria/angular-aria.min.js"></script>
+        <script src="./bower_components/angular-material/angular-material.min.js"></script>
+        <script src="./bower_components/angular-material-icons/angular-material-icons.min.js"></script>
+
+
+        <!--<script src="./dist/models/poco.models.js"></script>-->
+        <script src="./dist/controllers/mainController.js"></script>
+        <script src="./dist/services/mainService.js"></script>
+        <script src="./dist/app.js"></script>
+    </body>
+</html>

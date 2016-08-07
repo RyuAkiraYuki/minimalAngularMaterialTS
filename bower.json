@@ -1,0 +1,24 @@
+{
+  "name": "aimple-angualr-material-app",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Igor Alhasov (aka Ryu Akira Kenshin Yuki)"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular-material": "^1.0.9"
+  },
+  "dependencies": {
+    "angular-material-icons": "^0.7.1"
+  }
+}
